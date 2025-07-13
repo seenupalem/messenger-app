@@ -1,0 +1,54 @@
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Message containers */
+.you,
+.them {
+  max-width: 60%;
+  padding: 0.75rem;
+  border-radius: 10px;
+  display: inline-block;
+  word-wrap: break-word;
+  position: relative;
+}
+
+/* Align your messages to the right */
+.you {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  text-align: left;
+}
+
+/* Align friend's messages to the left */
+.them {
+  align-self: flex-start;
+  background-color: #ffffff;
+}
+
+/* Timestamp */
+.time {
+  display: block;
+  font-size: 0.7rem;
+  color: #555;
+  margin-top: 4px;
+}
